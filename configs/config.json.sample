@@ -1,0 +1,14 @@
+{
+    "app" : {
+        "port" : 3000,
+        "secret" : "SECRET_CODE_HERE"
+    },
+
+    "database" : {
+        "username" : "DATABASE_USERNAME",
+        "password" : "DATABASE_PASSWORD",
+        "name" : "DATABASE_NAME",
+        "host" : "DATABASE_HOST",
+        "dialect" : "DATABASE_DIALECT"
+    }
+}
