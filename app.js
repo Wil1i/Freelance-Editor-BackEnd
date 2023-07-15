@@ -8,6 +8,9 @@ const app = express()
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
+const adminRoutes = require("./routes/admin")
+app.use("/admin", adminRoutes)
+
 const customerRoutes = require("./routes/customer")
 app.use("/customer", customerRoutes)
 

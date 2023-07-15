@@ -4,7 +4,9 @@
 
 _Customer_\
 [Available Editors](#available-editors)\
-[Owned Editors](#owned-editors)
+[Owned Editors](#owned-editors)\
+_Admin_\
+[Project Information](#project-information)
 
 ### Available Editors
 
@@ -21,6 +23,14 @@ _Customer_\
 |                                    URL                                     | Method | Response Type | Queries | Body |
 | :------------------------------------------------------------------------: | :----: | :-----------: | :-----: | :--: |
 | [/customer/editors/owned](/controllers/customer/ownedEditorsController.js) |  GET   |     JSON      |    -    |  -   |
+
+## Project Information
+
+> Admin Permission Needed
+
+|                                       URL                                        | Method | Response Type | Queries | Body |
+| :------------------------------------------------------------------------------: | :----: | :-----------: | :-----: | :--: |
+| [/admin/project/information](/controllers/admin/projectInformationController.js) |  GET   |     JSON      |    -    |  -   |
 
 ## Ranks
 
