@@ -13,16 +13,31 @@ const User = db.define("users", {
         type: DataTypes.TEXT,
     },
 
+    firstName: {
+        type: DataTypes.TEXT
+    },
+
+    lastName: {
+        type: DataTypes.TEXT
+    },
+
     password: {
         type: DataTypes.TEXT
     },
 
     number: {
-        type: DataTypes.TEXT
+        type: DataTypes.TEXT,
+        defaultValue: null
+    },
+
+    userRank: {
+        type: DataTypes.TEXT,
+        defaultValue: "customer"
     },
 
     email: {
-        type: DataTypes.TEXT
+        type: DataTypes.TEXT,
+        defaultValue: null
     }
 })
 
