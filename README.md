@@ -6,7 +6,8 @@ _Customer_\
 [Available Editors](#available-editors)\
 [Owned Editors](#owned-editors)\
 _Admin_\
-[Project Information](#project-information)
+[Project Information](#project-information)\
+[Update User Rank](#update-user-rank)
 
 ### Available Editors
 
@@ -32,6 +33,14 @@ _Admin_\
 | :------------------------------------------------------------------------------: | :----: | :-----------: | :-----: | :--: |
 | [/admin/project/information](/controllers/admin/projectInformationController.js) |  GET   |     JSON      |    -    |  -   |
 
+## Update User Rank
+
+> Admin Permission Needed
+
+|                              URL                               | Method | Response Type | Queries |         Body          |
+| :------------------------------------------------------------: | :----: | :-----------: | :-----: | :-------------------: |
+| [/admin/user/rank](/controllers/admin/updateRankController.js) |  POST  |     JSON      |    -    | `id (user id)` `rank` |
+
 ## Ranks
 
 | Rank Name |                     Description                      |
@@ -51,3 +60,6 @@ _Admin_\
 |    2001    |                      Token is not found                       |
 |    2002    |                Token is valid (user logged in)                |
 |    2003    |                   User have not permission                    |
+|    2004    |                  Needed parameters undefined                  |
+|    2005    |                        User not found                         |
+|    2006    |                   Invalid Parameters Value                    |
