@@ -13,8 +13,7 @@
 ## Error Codes
 | Error Code | Description |
 | --- | --- |
-| 2000 | Token is in BlackList or session is invalid |
+| 2000 | Token is in BlackList or session is invalid (Clear the token) |
 | 2001 | Token is not found |
 | 2002 | Token is valid (user logged in) |
-| 2003 | Have problem in token (clear token) |
-| 2004 | User have not permission |
+| 2003 | User have not permission |

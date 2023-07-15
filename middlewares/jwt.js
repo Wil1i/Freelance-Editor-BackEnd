@@ -51,7 +51,7 @@ const isUserNotLoggedIn = async (req, res, next) => {
 
             res.status(403).json({ err: 2002 })
 
-        } else res.status(401).json({ err: 2003 })
+        } else res.status(401).json({ err: 2000 })
 
     } catch (error) {
 
@@ -66,7 +66,7 @@ const isUserOwner = (req, res, next) => {
         'developer'
     ]
 
-    if (!accessedRanks.includes(req.user.userRank)) return res.status(403).json({ err: 2004 })
+    if (!accessedRanks.includes(req.user.userRank)) return res.status(403).json({ err: 2003 })
 
     next()
 }
@@ -78,7 +78,7 @@ const isUserAdmin = (req, res, next) => {
         'admin',
     ]
 
-    if (!accessedRanks.includes(req.user.userRank)) return res.status(403).json({ err: 2004 })
+    if (!accessedRanks.includes(req.user.userRank)) return res.status(403).json({ err: 2003 })
 
     next()
 }
@@ -91,7 +91,7 @@ const isUserSupporter = (req, res, next) => {
         'supporter'
     ]
 
-    if (!accessedRanks.includes(req.user.userRank)) return res.status(403).json({ err: 2004 })
+    if (!accessedRanks.includes(req.user.userRank)) return res.status(403).json({ err: 2003 })
 
     next()
 }
@@ -103,7 +103,7 @@ const isUserEditor = (req, res, next) => {
         'editor'
     ]
 
-    if (!accessedRanks.includes(req.user.userRank)) return res.status(403).json({ err: 2004 })
+    if (!accessedRanks.includes(req.user.userRank)) return res.status(403).json({ err: 2003 })
 
     next()
 }
@@ -115,7 +115,7 @@ const isUserCustomer = (req, res, next) => {
         'customer'
     ]
 
-    if (!accessedRanks.includes(req.user.userRank)) return res.status(403).json({ err: 2004 })
+    if (!accessedRanks.includes(req.user.userRank)) return res.status(403).json({ err: 2003 })
 
     next()
 }
