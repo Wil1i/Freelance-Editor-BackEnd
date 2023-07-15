@@ -2,8 +2,8 @@
 
 ## API Documentation
 
-_Customer_
-[Available Editors](/README.md#available-editors)
+_Customer_\
+[Available Editors](/README.md#available-editors)\
 [Owned Editors](/README.md#owned-editors)
 
 ### Available Editors
