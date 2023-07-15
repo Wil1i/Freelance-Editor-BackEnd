@@ -1,5 +1,15 @@
 # A web project for YouTube Video Editors
 
+## API Documentation
+
+*Customer*
+[Available Editors](/README.md#available-editors)
+[Owned Editors](/README.md#owned-editors)
+
+### Available Editors
+
+### Owned Editors
+
 ## Ranks
 | Rank Name | Description |
 | --- | --- |
