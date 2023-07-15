@@ -38,6 +38,11 @@ const User = db.define("users", {
     email: {
         type: DataTypes.TEXT,
         defaultValue: null
+    },
+
+    session: {
+        type: DataTypes.TEXT,
+        defaultValue: null
     }
 })
 
