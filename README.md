@@ -7,7 +7,9 @@ _Customer_\
 [Owned Editors](#owned-editors)\
 _Admin_\
 [Project Information](#project-information)\
-[Update User Rank](#update-user-rank)
+[Update User Rank](#update-user-rank)\
+_Auth_\
+[Register](#register)
 
 ### Available Editors
 
@@ -25,7 +27,7 @@ _Admin_\
 | :------------------------------------------------------------------------: | :----: | :-----------: | :-----: | :--: |
 | [/customer/editors/owned](/controllers/customer/ownedEditorsController.js) |  GET   |     JSON      |    -    |  -   |
 
-## Project Information
+### Project Information
 
 > Admin Permission Needed
 
@@ -33,13 +35,19 @@ _Admin_\
 | :------------------------------------------------------------------------------: | :----: | :-----------: | :-----: | :--: |
 | [/admin/project/information](/controllers/admin/projectInformationController.js) |  GET   |     JSON      |    -    |  -   |
 
-## Update User Rank
+### Update User Rank
 
 > Admin Permission Needed
 
 |                              URL                               | Method | Response Type | Queries |         Body          |
 | :------------------------------------------------------------: | :----: | :-----------: | :-----: | :-------------------: |
 | [/admin/user/rank](/controllers/admin/updateRankController.js) |  POST  |     JSON      |    -    | `id (user id)` `rank` |
+
+### Register
+
+|                            URL                            | Method | Response Type | Queries |                                                  Body                                                   |
+| :-------------------------------------------------------: | :----: | :-----------: | :-----: | :-----------------------------------------------------------------------------------------------------: |
+| [/auth/register](/controllers/auth/registerController.js) |  POST  |     JSON      |    -    | `firstName` `lastName` `username` `password` `email OR number` `userRank [optional] (default=customer)` |
 
 ## Ranks
 
@@ -63,3 +71,4 @@ _Admin_\
 |    2004    |                  Needed parameters undefined                  |
 |    2005    |                        User not found                         |
 |    2006    |                   Invalid Parameters Value                    |
+|    2007    |                      Information In Use                       |
