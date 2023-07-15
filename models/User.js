@@ -43,6 +43,11 @@ const User = db.define("users", {
     session: {
         type: DataTypes.TEXT,
         defaultValue: null
+    },
+
+    verified: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: false
     }
 })
 
