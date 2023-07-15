@@ -10,6 +10,7 @@ _Admin_\
 [Update User Rank](#update-user-rank)\
 _Auth_\
 [Register](#register)
+[Login](#login)
 
 ### Available Editors
 
@@ -49,6 +50,12 @@ _Auth_\
 | :-------------------------------------------------------: | :----: | :-----------: | :-----: | :-----------------------------------------------------------------------------------------------------: |
 | [/auth/register](/controllers/auth/registerController.js) |  POST  |     JSON      |    -    | `firstName` `lastName` `username` `password` `email OR number` `userRank [optional] (default=customer)` |
 
+### Login
+
+|                  URL                   | Method | Response Type | Queries |             Body              |
+| :------------------------------------: | :----: | :-----------: | :-----: | :---------------------------: |
+| [/auth/login](/controllers/auth/login) |  POST  |     JSON      |    -    | `username OR email OR number` |
+
 ## Ranks
 
 | Rank Name |                     Description                      |
@@ -72,3 +79,4 @@ _Auth_\
 |    2005    |                        User not found                         |
 |    2006    |                   Invalid Parameters Value                    |
 |    2007    |                      Information In Use                       |
+|    2008    |           Target with entered information not found           |
