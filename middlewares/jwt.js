@@ -51,7 +51,7 @@ const isUserNotLoggedIn = async (req, res, next) => {
 
             res.status(403).json({ err: 2002 })
 
-        } else res.status(401).json({ err: 2000 })
+        } else res.status(409).json({ err: 2000 })
 
     } catch (error) {
 
