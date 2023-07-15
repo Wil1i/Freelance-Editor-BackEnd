@@ -18,4 +18,6 @@ const BlackList = db.define("blacklists", {
     }
 })
 
+BlackList.sync()
+
 module.exports = BlackList

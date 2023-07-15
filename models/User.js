@@ -46,4 +46,28 @@ const User = db.define("users", {
     }
 })
 
+const EditorsInformation = db.define("editorsinformations", {
+    userId: {
+        type: DataTypes.INTEGER
+    },
+
+    editedVideos: {
+        type: DataTypes.INTEGER,
+        defaultValue: 0
+    },
+
+    isAvailable: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: true
+    }
+})
+
+EditorsInformation.hasMany(User, { as: "informations" })
+User.belongsTo(EditorsInformation, {
+    foreginKey: "userId",
+    as: "informations"
+})
+
+User.sync()
+
 module.exports = User
