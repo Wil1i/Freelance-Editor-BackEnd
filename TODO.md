@@ -1,1 +1,2 @@
 - [ ] Delete all security information from response of any APIs
+- [ ] Delete in-file defines and use require for each model
